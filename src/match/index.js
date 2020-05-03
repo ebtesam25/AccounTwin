@@ -6,7 +6,7 @@ import MatchImg from '../assets/match.png';
 import LogoImg from '../assets/logo.png';
 import CodeImage from '../assets/coding.png';
 import YesIcon from "../assets/tick.png";
-
+import NoIcon from "../assets/xicon.png";
 
 
 //import UI components
@@ -32,7 +32,7 @@ class Match extends Component {
                 </div>
                 <div style={{ marginRight:"5%"}}>
                      <Card
-                        headStyle={{fontSize:"3vh"}}
+                        headStyle={{fontSize:"3vh", fontFamily:"Palanquin"}}
                         bodyStyle={{fontSize:"1.5vh"}}
                         bordered="true"
                         style={{ width: "300px", height: "400px" , backgroundColor:"#a0edec", fontFamily:"Lato", fontSize:"3vh",listStyleType:"none"}}
@@ -45,7 +45,7 @@ class Match extends Component {
                         }
                         actions={[
                             <Button type="primary" shape="circle"  size="small" style={{background:"none", border:"none"}} ><img src={YesIcon}/></Button>,
-                            <Button type="primary" shape="circle"  size="small" style={{background:"none", border:"none"}} ><img src={YesIcon}/></Button>
+                            <Button type="primary" shape="circle"  size="small" style={{background:"none", border:"none"}} ><img src={NoIcon} height="56px"/></Button>
                         ]}
                     >
                         <Meta
