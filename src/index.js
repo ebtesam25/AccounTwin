@@ -7,6 +7,7 @@ import App from "./App";
 import Home from "./home";
 import Login from "./login";
 import Match from "./match";
+import Cards from "./cards";
 
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Route exact path="/home" component={Home} />
       <Route path="/login" component={Login} />
       <Route path="/match" component={Match} />
+      <Route path="/cards" component={Cards} />
     </div>
   </Router>,
   document.getElementById("root")

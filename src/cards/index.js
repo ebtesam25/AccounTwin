@@ -5,8 +5,7 @@ import 'antd/dist/antd.css';
 import MatchImg from '../assets/match.png';
 import LogoImg from '../assets/logo.png';
 import CodeImage from '../assets/coding.png';
-import YesIcon from "../assets/tick.png";
-import NoIcon from "../assets/xicon.png";
+
 
 
 //import UI components
@@ -14,7 +13,7 @@ import {Card, Avatar, Button} from 'antd';
 
 import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
 const { Meta } = Card;
-class Match extends Component {
+class Cards extends Component {
   constructor(props) {
     super(props);
   } 
@@ -26,7 +25,7 @@ class Match extends Component {
             </div>
             <div>
               <div style={{margin:"15vh 2.5%",fontFamily:"Raleway", fontSize:"4vh",lineHeight:"100%", color:"#0e9e9b", width:"41.7%", float: "left"}}>
-                Find your accountability buddy!
+                You've found an accountability buddy!
                 <div style={{fontFamily:"Lato", lineHeight:"100%", fontSize:"3vh", marginTop: "5%"}}>
                 
                 </div>
@@ -43,15 +42,11 @@ class Match extends Component {
                             style={{width:"70%", margin:"10%"}}
                         />
                         }
-                        actions={[
-                            <Button type="primary" shape="circle"  size="small" style={{background:"none", border:"none"}} ><img src={YesIcon}/></Button>,
-                            <Button type="primary" shape="circle"  size="small" style={{background:"none", border:"none"}} ><img src={NoIcon} height="56px"/></Button>
-                        ]}
                     >
                         <Meta
                         avatar={<Avatar src="https://img.icons8.com/bubbles/50/000000/user.png"/>}
-                        title="Hackathon Goal"
-                        description="I just want my project to compile"
+                        title="Jane Doe"
+                        description="janedoe@at.com"
                         />
                     </Card>
                 </div>
@@ -63,4 +58,4 @@ class Match extends Component {
     }
 }
 
-export default Match;
+export default Cards;
