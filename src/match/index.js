@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from 'react-router-dom';
 import 'antd/dist/antd.css';
 
 //import assets
@@ -44,7 +45,7 @@ class Match extends Component {
                         />
                         }
                         actions={[
-                            <Button type="primary" shape="circle"  size="small" style={{background:"none", border:"none"}} ><img src={YesIcon}/></Button>,
+                            <Link to="/cards"> <Button type="primary" shape="circle"  size="small" style={{background:"none", border:"none"}} ><img src={YesIcon}/></Button></Link>,
                             <Button type="primary" shape="circle"  size="small" style={{background:"none", border:"none"}} ><img src={NoIcon} height="56px"/></Button>
                         ]}
                     >

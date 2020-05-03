@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from 'react-router-dom';
 import 'antd/dist/antd.css';
 //import assets
 import LoginImg from '../assets/login.png';
@@ -67,7 +68,7 @@ class Login extends Component {
 
                     <Form.Item>
                     <div style={{ marginRight:"5%"}}>
-                    <Button type="primary" shape="round" size="large" style={{backgroundColor:"#0e9e9b", height:"7.5vh", width: "25vh", marginLeft:"2%"}} onClick={URL}> Login </Button>
+                    <Link to="/match"> <Button type="primary" shape="round" size="large" style={{backgroundColor:"#0e9e9b", height:"7.5vh", width: "25vh", marginLeft:"2%"}} onClick={URL}> Login </Button></Link>
                     </div>
                     </Form.Item>
                     </Form>

@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from 'react-router-dom';
 import 'antd/dist/antd.css';
 //import assets
 import HomeImg from '../assets/home.png';
@@ -26,7 +27,7 @@ class Home extends Component {
                 </div>
                 <div style={{ marginRight:"5%"}}>
                 <Button type="primary" shape="round" size="large" style={{backgroundColor:"#0d847e", height:"7.5vh", width: "15vh", border:"none"}}> Sign Up </Button>
-                <Button type="primary" shape="round" size="large" style={{backgroundColor:"#0e9e9b", height:"7.5vh", width: "15vh", marginLeft:"2%", border:"none"}}> Login </Button>
+                <Link to="/login"><Button type="primary" shape="round" size="large" style={{backgroundColor:"#0e9e9b", height:"7.5vh", width: "15vh", marginLeft:"2%", border:"none"}}> Login </Button></Link>
                 </div>
                 </div>
               <div style={{float: "right"}}><img src={HomeImg} alt="home" height="600vh"></img></div>
