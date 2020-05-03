@@ -40,7 +40,7 @@ class Login extends Component {
                         name="username"
                         rules={[
                         {
-                            required: true,
+                            required: false,
                             message: 'Please enter your username!',
                         },
                         ]}
@@ -53,7 +53,7 @@ class Login extends Component {
                         name="password"
                         rules={[
                         {
-                            required: true,
+                            required: false,
                             message: 'Please enter your password!',
                         },
                         ]}
